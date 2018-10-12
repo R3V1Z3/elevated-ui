@@ -1,2 +1,3 @@
-# elevated-ui
-Non-flat UI for Atom that mimics various hardware consoles
+# Elevated UI
+
+The non-flat UI for Atom. 

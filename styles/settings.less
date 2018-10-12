@@ -1,0 +1,186 @@
+// Settings
+
+// Modular Scale (1.125): http://www.modularscale.com/?1&em&1.125&web&table
+@ms-6: @ui-size * 2.027;
+@ms-5: @ui-size * 1.802;
+@ms-4: @ui-size * 1.602;
+@ms-3: @ui-size * 1.424;
+@ms-2: @ui-size * 1.266;
+@ms-1: @ui-size * 1.125;
+@ms-0: @ui-size * 1;
+@ms_1: @ui-size * 0.889;
+@ms_2: @ui-size * 0.790;
+
+.settings-view .panels-item .section {
+	mix-blend-mode: multiply;
+    border: 5px solid transparent;
+    margin: 10px;
+		box-shadow:
+	    inset 0 0 0px 5px rgba(0,0,0,0.5),
+	    0 0 4px rgba(0,0,0,0.5);
+	  background: darken(@tree-view-background-color, 10%);
+}
+
+.settings-view {
+	background: none;
+
+	// Menu ------------------------------
+
+	.config-menu * {
+		color: @text-color-subtle;
+	}
+
+	.config-menu {
+		text-shadow: none;
+		position: relative;
+		min-width: @ui-size * 15;
+		max-width: @ui-size * 20;
+		filter: invert();
+		margin: 10px;
+		padding: 10px;
+		background:
+			radial-gradient(
+				lighten(@ui-syntax-color,5%),
+				@ui-syntax-color
+			);
+		box-shadow:
+			inset 0 0 4px white,
+			inset 0 0 1px 10px #555,
+			inset 0 0 30px 10px white;//rgba(0,0,0,0.25);
+
+		.btn {
+			mix-blend-mode: soft-light;
+			white-space: initial;
+			font-size: @ms_1;
+			line-height: 1;
+			padding: @ui-padding/3 @ui-padding/2;
+			&::before {
+				vertical-align: middle;
+			}
+		}
+
+
+	}
+	.nav {
+		& > li > a {
+			padding: @ui-padding/2 @ui-padding;
+			line-height: @ui-line-height;
+		}
+	}
+
+
+	// Sections ------------------------------
+
+	& > .panels {
+		background-color: transparent;//@level-2-color;
+	}
+
+	.section-container {
+		max-width: @ui-size*60;
+	}
+	.sub-section {
+		margin: @ui-padding*3 0;
+	}
+
+	.section,
+	.section:first-child,
+	.section:last-child {
+		padding: @ui-padding*3;
+	}
+
+	.themes-panel .control-group {
+		margin-top: @ui-padding*2;
+	}
+
+
+	// Titles ------------------------------
+
+	.section .section-heading {
+		margin-bottom: @ui-padding/1.5;
+	}
+
+	.sub-section-heading.icon:before,
+	.section-heading.icon:before {
+		margin-right: @ui-padding-icon;
+	}
+
+
+
+	// Cards ------------------------------
+
+	.package-card {
+		padding: @ui-padding;
+		.meta-controls .status-indicator {
+			width: @ui-padding/4;
+			&:before {
+				content: "\00a0"; // fixes 0 height
+			}
+		}
+	}
+
+
+	// Components ------------------------------
+
+	.icon::before {
+		color: @text-color-subtle;
+	}
+
+	.editor-container {
+		margin: @ui-padding 0;
+	}
+
+	.form-control {
+		font-size: @ui-size*1.25;
+		height: @ui-line-height;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.update-all-button {
+		font-size: .75em;
+	}
+
+	.install-button {
+		.btn-variant(@accent-bg-color);
+	}
+
+	input[type="checkbox"] {
+		background-color: @background-color-selected;
+		&:active,
+		&:checked {
+			background-color: @accent-color;
+			box-shadow:
+				inset 0 0 20px rgba(0,0,0,0.25),
+				0 3px 3px rgba(0,0,0,0.5);
+		}
+		&:before,
+		&:after {
+			background-color: @accent-text-color;
+		}
+	}
+
+	.search-container .btn {
+		font-size: @ui-input-size;
+	}
+
+}
+
+// Settings panel
+
+.panels-menu.nav {
+	a {
+		color: unset !important;
+		background: none !important;
+	}
+
+	.active a {
+	  box-shadow:
+			inset 0 0 30px currentColor;
+	}
+
+	a:hover {
+		box-shadow:
+			inset 0 0 30px currentColor;
+	}
+
+}

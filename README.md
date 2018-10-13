@@ -9,18 +9,16 @@ It works with light syntax themes but it generally looks much better with dark t
 > CSS with [Rain syntax](https://atom.io/themes/rain-syntax) theme.
 ![CSS with Rain syntax theme](screenshots/elevated-ui-rain.png)
 
+> Markdown preview with Solarized syntax theme.
+![Markdown preview with Solarized syntax](screenshots/elevated-ui-md-solarized.png)
+
 > Settings with [City Lights syntax](https://atom.io/themes/city-lights-syntax) theme.
 ![Settings with City Lights syntax](screenshots/elevated-ui-settings-city-lights.png)
 
-> Inline Python evaluation using Hydrogen with [Autumn Highlighter syntax](https://atom.io/themes/autumn-highlighter-syntax) theme.
+> Inline Python evaluation using [Hydrogen](https://nteract.io/atom) with [Autumn Highlighter syntax](https://atom.io/themes/autumn-highlighter-syntax) theme.
 ![Hydrogen with Autumn Highlighter syntax](screenshots/elevated-ui-autumn-highlighter-hydrogen.png)
 
 ## Credits
 
-* [@Atom One Light UI](https://github.com/atom/one-light-ui) - core UI design
+* [@Atom One Light UI](https://github.com/atom/one-light-ui) - core UI elements
 * [@Ugotsta](https://github.com/Ugotsta) - initial design
-
-## Features
-
-* Turns tabs into buttons.
-* Much less weighty than some themes.

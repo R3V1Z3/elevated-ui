@@ -1,7 +1,7 @@
 {
   "name": "elevated-ui",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Atom, elevated. Or rather, not flat.",
   "keywords": [
     "light",

@@ -1,5 +1,5 @@
 root = document.documentElement
-themeName = 'one-light-ui'
+themeName = 'elevated-ui'
 
 
 module.exports =

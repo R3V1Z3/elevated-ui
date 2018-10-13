@@ -1,4 +1,18 @@
+input {
+  background: red;
+}
 
+atom-workspace .settings-view select.form-control {
+    filter: invert();
+    box-shadow:
+      0 0 4px rgba(0,0,0,0.25),
+      0 -1px 1px 1px @input-background-color,
+      0 0px 1px 1px black;
+    color: @text-color-highlight;
+    text-shadow: none;
+    border: 1px solid darken(@input-background-color,20%);//@input-border-color;
+    background-color: darken(@input-background-color,15%);
+}
 //
 // Checkbox
 // -------------------------

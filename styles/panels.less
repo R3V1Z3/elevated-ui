@@ -9,9 +9,20 @@ atom-pane-container atom-pane .item-views .pane-item,
 atom-pane-container atom-pane .item-views .github-Panel {
 	font-weight: 900;
 	text-shadow:
-		-2px -2px 2px rgba(255,255,255,0.5),
-		1px 1px 3px rgba(0,0,0,0.5);
+		0px -2px 2px rgba(255,255,255,0.5),
+		0px 1px 3px rgba(0,0,0,0.5);
 	background: none;
+}
+
+atom-panel-container.right .panes {
+  border-left: 1px solid rgba(0,0,0,0.35);
+  box-shadow:
+		inset 0 4px 4px rgba(0,0,0,0.25);
+}
+
+atom-panel-container.bottom {
+  box-shadow:
+    0 -2px 8px rgba(0,0,0,0.5);
 }
 
 atom-panel {

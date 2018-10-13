@@ -3,10 +3,10 @@
 // background styling for left pane
 atom-panel-container.left .panes {
   padding-top: 60px;
-  background: darken(@tree-view-background-color, 10%);
   box-shadow:
-    inset -1px 0 1px black,
-    inset -3px 0 3px rgba(255,255,255,0.5);
+		inset 0 4px 4px rgba(0,0,0,0.25);
+  background: darken(@tree-view-background-color, 10%);
+  border-right: 1px solid rgba(0,0,0,0.35);
 }
 
 // background for inner content of left pane
@@ -28,10 +28,18 @@ atom-panel-container.left atom-pane {
 
 // Atom branding
 atom-panel-container.left .panes::before {
-  content: "ATOM Elevated v0.0.1";
+  content: "ＡＴＯＭ ⠀⠀⠀ᴱ ᴸ ᴱ ⱽ ᴬ ᵀ ᴱ ᴰ";
   text-align: center;
   pointer-events: none;
-  background: darken(@tree-view-background-color, 10%);
+  overflow: visible;
+  font-size: 14px !important;
+
+  background:
+		url(atom://elevated-ui/assets/Atom_editor_logo.svg);
+	background-position: 122px 7px;
+  background-size: 29px;
+	background-repeat: no-repeat;
+
   color: rgba(0,0,0,0.5);
   box-shadow:
     inset 0 0 0px 5px rgba(0,0,0,0.5),
@@ -72,7 +80,7 @@ atom-panel-container.left .panes::before {
 
   // Selected state
   .selected:before {
-    background: @background-color-selected;
+    background: rgba(0,0,0,0.25);
   }
 
   // Focus + selected state
@@ -83,7 +91,7 @@ atom-panel-container.left .panes::before {
       color: contrast(@button-background-color-selected);
     }
     .selected:before {
-      background: @button-background-color-selected;
+      background: rgba(0,0,0,0.25);
     }
   }
 }

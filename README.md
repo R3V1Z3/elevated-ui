@@ -18,6 +18,8 @@ It works with light syntax themes but it generally looks much better with dark t
 > Inline Python evaluation using [Hydrogen](https://nteract.io/atom) with [Autumn Highlighter syntax](https://atom.io/themes/autumn-highlighter-syntax) theme.
 ![Hydrogen with Autumn Highlighter syntax](screenshots/elevated-ui-autumn-highlighter-hydrogen.png)
 
+> Font used in screenshots is [Fira Code iScript](https://github.com/kencrocken/FiraCodeiScript)
+
 ## Credits
 
 * [@Atom One Light UI](https://github.com/atom/one-light-ui) - core UI elements
